@@ -1,0 +1,7 @@
+<div class="todo-item">
+  <label>
+    <input type="checkbox" [(ngModel)]="todo.isCompleted" (change)="toggleCompletion()" />
+    <span [class.completed]="todo.isCompleted">{{ todo.title }}</span>
+  </label>
+  <button class="delete-btn" (click)="deleteItem()">Excluir</button>
+</div>
